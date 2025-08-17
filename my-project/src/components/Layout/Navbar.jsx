@@ -21,9 +21,10 @@ const Navbar = () => {
           {/* Navlinks */}
 
 
-          <div className="Navllinks flex gap-5 ">
+          <div className="Navlinks flex gap-5 ">
             {NavItems.map((link) => (
-              <Link to={link?.path}>
+              <Link
+              key={link.name}  to={link?.path}>
                 <div className='font-bold'>{link?.name}</div>
               </Link>
             ))}
