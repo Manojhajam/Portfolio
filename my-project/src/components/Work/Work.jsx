@@ -1,11 +1,125 @@
-import React from 'react'
+import React from "react";
+import LMS from "../../assets/LMS.png";
+import { Github,Layers } from "lucide-react";
 
 const Work = () => {
   return (
-    <div className="bg-green-600 h-screen flex items-center justify-center text-4xl">
-      Work
-    </div>
-  )
-}
+    <div className="container px-16 mx-auto">
+      <div className="h-screen">
+        <h1 className="text-4xl font-bold mt-10 mb-4 text-center">
+          My Recent Works
+        </h1>
+        <div className="w-16 h-1 bg-blue-600 mx-auto mb-10 rounded-full"></div>
 
-export default Work
+        {/* Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-ce">
+
+          <div className="group bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-border/50">
+            <div className="relative overflow-hidden h-56">
+              <img
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src={LMS}
+                alt=""
+              />
+              <a
+                href="https://github.com/Manojhajam/Library-management-System"
+                target="_blank"
+                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <Github className="h-8 w-8 text-white hover:scale-110 transition-transform" />
+              </a>
+            </div>
+
+            <div className="p-6">
+              <div className="flex items-center gap-2 mb-2">
+                <Layers className="lucide lucide-layers h-4 w-4 text-primary" />
+                <h2 className="text-xs text-muted-foreground font-medium">
+                  Full Stack Development
+                </h2>
+              </div>
+              <h1 className="text-xl font-semibold mb-2">
+                Library management System
+              </h1>
+              <p className="text-muted-foreground">
+                A Library Management System web application that allows users to
+                manage books, members and transactions.
+              </p>
+            </div>
+          </div>
+          
+{/* Card-2 */}
+          
+          <div className="group bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-border/50">
+            <div className="relative overflow-hidden h-56">
+              <img
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src={LMS}
+                alt=""
+              />
+              <a
+                href="https://github.com/Manojhajam/Library-management-System"
+                target="_blank"
+                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <Github className="h-8 w-8 text-white hover:scale-110 transition-transform" />
+              </a>
+            </div>
+
+            <div className="p-6">
+              <div className="flex items-center gap-2 mb-2">
+                <Layers className="lucide lucide-layers h-4 w-4 text-primary" />
+                <h2 className="text-xs text-muted-foreground font-medium">
+                  Full Stack Development
+                </h2>
+              </div>
+              <h1 className="text-xl font-semibold mb-2">
+                Library management System
+              </h1>
+              <p className="text-muted-foreground">
+                A Library Management System web application that allows users to
+                manage books, members and transactions.
+              </p>
+            </div>
+          </div>
+
+          {/* Card-3 */}
+          <div className="group bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-border/50">
+            <div className="relative overflow-hidden h-56">
+              <img
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src={LMS}
+                alt=""
+              />
+              <a
+                href="https://github.com/Manojhajam/Library-management-System"
+                target="_blank"
+                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <Github className="h-8 w-8 text-white hover:scale-110 transition-transform" />
+              </a>
+            </div>
+
+            <div className="p-6">
+              <div className="flex items-center gap-2 mb-2">
+                <Layers className="lucide lucide-layers h-4 w-4 text-primary" />
+                <h2 className="text-xs text-muted-foreground font-medium">
+                  Full Stack Development
+                </h2>
+              </div>
+              <h1 className="text-xl font-semibold mb-2">
+                Library management System
+              </h1>
+              <p className="text-muted-foreground">
+                A Library Management System web application that allows users to
+                manage books, members and transactions.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Work;
