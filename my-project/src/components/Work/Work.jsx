@@ -6,7 +6,7 @@ import { FolderOpen } from "lucide-react";
 
 const Work = () => {
   return (
-    <div className="container px-16 mx-auto">
+    <div className="container px-16 mx-auto bg-slate-50">
       <div className="h-screen">
         <h1 className="text-4xl font-bold mt-10 mb-4 text-center">
           My Recent Works
