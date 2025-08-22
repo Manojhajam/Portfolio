@@ -1,5 +1,8 @@
 import React from 'react'
 import manoj from "../../assets/manoj.jpg"
+import { ArrowDown } from "lucide-react"
+import AboutUs from '../AboutUs/AboutUs'
+import { Link } from 'react-scroll'
 
 
 const Home = () => {
@@ -27,13 +30,21 @@ const Home = () => {
         </p>
       </div>
       <div className="flex gap-4">
-        <button className="bg-blue-600 text-white px-7 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg text-lg">  
+        <button className="bg-blue-600 text-white px-7 py-2 rounded-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg text-lg">
           Contact Me
         </button>
         <button className="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-lg font-semibold hover:bg-blue-400 hover:text-gray-900 transition-colors shadow-lg text-lg">
           Learn More
         </button>
       </div>
+      <Link
+        to={"about"}
+        smooth={true}
+        duration={500}
+        className="animate-bounce mt-5 cursor-pointer"
+      >
+        <ArrowDown color="#2563eb" size={30} />
+      </Link>
     </div>
   );
 }

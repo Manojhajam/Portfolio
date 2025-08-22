@@ -12,3 +12,17 @@
 	background: rgba(59, 130, 246, 0.3); /* Tailwind blue-600/30 */
 	border-radius: 9999px;
 }
+
+@keyframes navbar-slide {
+  from {
+    transform: translateY(-100%);
+    opacity: 0.5;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.animate-navbar-slide {
+  animation: navbar-slide 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
