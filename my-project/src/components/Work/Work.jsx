@@ -8,7 +8,7 @@ const Work = () => {
   return (
     <div className="container px-16 mx-auto bg-slate-50">
       <div className="min-h-screen">
-        <h1 className="text-4xl font-bold mt-10 mb-4 text-center">
+        <h1 className="text-4xl font-bold pt-10 mb-4 text-center">
           My Recent Works
         </h1>
         <div className="w-16 h-1 bg-blue-600 mx-auto mb-5 rounded-full"></div>

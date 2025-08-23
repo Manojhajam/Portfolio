@@ -43,7 +43,7 @@ const Education = () => {
     <section id="education" className="section bg-secondary/30 min-h-screen">
       <div className="w-[80%] mx-auto">
         <div className="container max-w-4xl mx-auto">
-          <h2 className="section-title text-4xl font-bold text-center mb-4">
+          <h2 className="section-title text-4xl font-bold text-center mb-4 pt-8">
             Education & Experience
           </h2>
           <div className="w-16 h-1 bg-blue-600 mx-auto mb-10 rounded-full"></div>
