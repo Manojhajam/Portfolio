@@ -8,7 +8,7 @@ import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
-    <div className="h-screen flex flex-col justify-center items-center text-4xl gap-5">
+    <div className="min-h-screen flex flex-col justify-center items-center text-4xl gap-5">
       <div className="photo">
         <img
           className="w-[250px] h-[250px] rounded-full border-4 border-blue-600"
@@ -18,7 +18,7 @@ const Home = () => {
       </div>
       <div className="flex flex-col justify-center items-center gap-3">
         <h1 className="text-5xl font-bold mt-5">
-          Hi, I'm <span className="text-blue-500">Manoj Hajam</span>
+          Hi, I'm <span className="text-blue-500 sm:items-center">Manoj Hajam</span>
         </h1>
         <h2 className="text-2xl md:text-3xl text-muted-foreground text-center">
           Software Developer
@@ -42,7 +42,7 @@ const Home = () => {
         to={"about"}
         smooth={true}
         duration={500}
-        className="animate-bounce mt-5 cursor-pointer"
+        className="animate-bounce mt-10 cursor-pointer"
       >
         <ArrowDown color="#2563eb" size={30} />
       </Link>

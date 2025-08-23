@@ -3,12 +3,13 @@ import { ChevronsLeftRight } from "lucide-react";
 
 const AboutUs = () => {
   return (
-    <div className="text-4xl  gap-4 bg-slate-50">
-      <div className=" h-screen flex items-center justify-center flex-col gap-8">
-        <h1 className="text-4xl font-bold mb-10">About Me</h1>
+    <div className="">
+      <div className="w-[80%] mx-auto min-h-screen">
+        <h1 className="text-4xl font-bold mb-4 pt-12 text-center">About Me</h1>
+        <div className="w-16 h-1 bg-blue-600 mx-auto mb-10 rounded-full"></div>
 
         <div className="flex gap-8">
-          <div className="text-lg text-gray-600 flex flex-col gap-6 max-w-2xl mx-auto">
+          <div className="text-lg text-gray-700 flex flex-col gap-6 max-w-2xl mx-auto">
             <p>
               Hi, I’m Manoj, a passionate Web Developer with a keen eye for
               detail and a drive to build impactful digital experiences. I enjoy
@@ -16,11 +17,11 @@ const AboutUs = () => {
               solutions that not only work well but also look great.
             </p>
             <p>
-              With a strong foundation in React,
-              Node.js, Tailwind, MongoDB, I love exploring new technologies and
-              continuously improving my craft. Beyond coding, I’m motivated by
-              solving real-world problems, collaborating with creative minds,
-              and delivering projects that make a difference.
+              With a strong foundation in React, Node.js, Tailwind, MongoDB, I
+              love exploring new technologies and continuously improving my
+              craft. Beyond coding, I’m motivated by solving real-world
+              problems, collaborating with creative minds, and delivering
+              projects that make a difference.
             </p>
             <p>
               When I’m not building, you’ll often find me exploring new tech
