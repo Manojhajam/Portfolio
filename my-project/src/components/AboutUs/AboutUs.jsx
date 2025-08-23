@@ -1,6 +1,33 @@
 import React from "react";
 import { ChevronsLeftRight } from "lucide-react";
 
+const codeData = [
+  {
+    name: "Clean Code",
+    icon: <ChevronsLeftRight color="#2563eb" size={30} />,
+    Description:
+      "Writing maintainable, scalable, and efficient code following best practices.",
+  },
+  {
+    name: "Clean Code",
+    icon: <ChevronsLeftRight color="#2563eb" size={30} />,
+    Description:
+      "Writing maintainable, scalable, and efficient code following best practices.",
+  },
+  {
+    name: "Clean Code",
+    icon: <ChevronsLeftRight color="#2563eb" size={30} />,
+    Description:
+      "Writing maintainable, scalable, and efficient code following best practices.",
+  },
+  {
+    name: "Clean Code",
+    icon: <ChevronsLeftRight color="#2563eb" size={30} />,
+    Description:
+      "Writing maintainable, scalable, and efficient code following best practices.",
+  },
+];
+
 const AboutUs = () => {
   return (
     <div className="">
@@ -8,7 +35,7 @@ const AboutUs = () => {
         <h1 className="text-4xl font-bold mb-4 pt-12 text-center">About Me</h1>
         <div className="w-16 h-1 bg-blue-600 mx-auto mb-10 rounded-full"></div>
 
-        <div className="flex gap-8">
+        <div className="flex gap-8 max-md:flex-col">
           <div className="text-lg text-gray-700 flex flex-col gap-6 max-w-2xl mx-auto">
             <p>
               Hi, I’m Manoj, a passionate Web Developer with a keen eye for
@@ -30,60 +57,21 @@ const AboutUs = () => {
             </p>
           </div>
 
+           {/* Card */}
           <div className="flex gap-6 max-w-2xl mx-auto">
-            <div className="flex flex-col gap-5">
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                <div className="">
-                  <ChevronsLeftRight color="black" />
+            <div className="mx-auto grid grid-cols-2 max-md:grid-cols-1 gap-5">
+              {codeData.map((data, index) => (
+                <div
+                  key={index}
+                  className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                >
+                  <div className="">{data.icon}</div>
+                  <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                    {data.name}
+                  </h4>
+                  <p className="text-sm text-gray-600">{data.Description}</p>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                  Clean Code
-                </h4>
-                <p className="text-sm text-gray-600">
-                  Writing maintainable, scalable, and efficient code following
-                  best practices.
-                </p>
-              </div>
-
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                <div className="">
-                  <ChevronsLeftRight color="black" />
-                </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                  Clean Code
-                </h4>
-                <p className="text-sm text-gray-600">
-                  Writing maintainable, scalable, and efficient code following
-                  best practices.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col gap-5">
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                <div className="">
-                  <ChevronsLeftRight color="black" />
-                </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                  Clean Code
-                </h4>
-                <p className="text-sm text-gray-600">
-                  Writing maintainable, scalable, and efficient code following
-                  best practices.
-                </p>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
-                <div className="">
-                  <ChevronsLeftRight color="black" />
-                </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">
-                  Clean Code
-                </h4>
-                <p className="text-sm text-gray-600">
-                  Writing maintainable, scalable, and efficient code following
-                  best practices.
-                </p>
-              </div>
+              ))}
             </div>
           </div>
         </div>
