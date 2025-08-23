@@ -36,7 +36,7 @@ const Contact = () => {
       {/* Contact Information */}
       <div className="flex justify-center mt-8 gap-10 flex-wrap">
         {/* Info Box */}
-        <div className="bg-white w-fit p-5 rounded-lg shadow-lg pr-28">
+        <div className="bg-white rounded-lg shadow-lg w-96 p-5">
           <h1 className="text-xl font-semibold mb-5">Contact Information</h1>
           <div className="flex items-center gap-2">
             <Mail color="blue" size={17} />
