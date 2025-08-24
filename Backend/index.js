@@ -1,5 +1,6 @@
 import express from "express";
 import mongoose from "mongoose";
+import contactRouter from "./routes/contactRoutes.js";
 
 const PORT = 5000;
 const app = express();
