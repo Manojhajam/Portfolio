@@ -5,7 +5,7 @@ import { FolderOpen } from "lucide-react";
 
 const Work = () => {
   return (
-    <div className="container px-16 mx-auto bg-slate-50">
+    <div className="container px-16 max-sm:px-5 mx-auto bg-slate-50">
       <div className="min-h-screen">
         <h1 className="text-4xl font-bold pt-10 mb-4 text-center">
           My Recent Works
@@ -23,7 +23,7 @@ const Work = () => {
         </div>
 
         {/* Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-ce">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {/* Card-1(LMS) */}
           <div className="group bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-border/50">
             <div className="relative overflow-hidden h-56">
