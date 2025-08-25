@@ -8,6 +8,7 @@ const contactSchema = new Schema({
   email: {
     type: String,
     unique: true,
+    required: true,
   },
   message: {
     type: String,
@@ -15,4 +16,4 @@ const contactSchema = new Schema({
   },
 });
 
-export const contactModel = mongoose.Model("contact",contactSchema)
+export const contactModel = mongoose.model("contact", contactSchema);

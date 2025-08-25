@@ -10,7 +10,7 @@ app.get("/test", (req, res) => {
    res.send("Hello world")    
 })
 
-app.use("api/contact", contactRouter)
+app.use("/api/contact", contactRouter)
 
 
 

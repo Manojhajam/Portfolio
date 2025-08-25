@@ -1,8 +1,8 @@
-import express, { Router } from "express";
-import { contactControllers } from "../controllers.js/contactControllers.js";
+import express from "express";
+import { contactControllers } from "../controllers/contactControllers.js";
 
 const contactRouter = express.Router();
 
-contactRouter.route('/details').post(contactControllers)
+contactRouter.route("/").post(contactControllers);
 
 export default contactRouter;

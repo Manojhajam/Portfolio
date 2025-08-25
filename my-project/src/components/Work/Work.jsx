@@ -1,6 +1,5 @@
 import React from "react";
 import LMS from "../../assets/LMS.png";
-import Weather from "../../assets/Weather.png";
 import { Github, Layers } from "lucide-react";
 import { FolderOpen } from "lucide-react";
 
@@ -30,7 +29,7 @@ const Work = () => {
             <div className="relative overflow-hidden h-56">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src={LMS}
+                src="/assets/LMS.png"
                 alt=""
               />
               <a
@@ -68,7 +67,7 @@ const Work = () => {
             <div className="relative overflow-hidden h-56">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src={Weather}
+                src="/assets/weather.png"
                 alt=""
               />
               <a
@@ -103,7 +102,7 @@ const Work = () => {
             <div className="relative overflow-hidden h-56">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src={LMS}
+                src="/assets/LMS.png"
                 alt=""
               />
               <a

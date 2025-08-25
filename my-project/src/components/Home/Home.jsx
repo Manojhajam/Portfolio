@@ -1,10 +1,7 @@
-import React from 'react'
-import manoj from "../../assets/manoj.jpg"
-import manoj2 from "../../assets/manoj2.jpg"
-import { ArrowDown } from "lucide-react"
-import AboutUs from '../AboutUs/AboutUs'
-import { Link } from 'react-scroll'
-
+import React from "react";
+import { ArrowDown } from "lucide-react";
+import AboutUs from "../AboutUs/AboutUs";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -12,7 +9,7 @@ const Home = () => {
       <div className="photo">
         <img
           className="w-[250px] h-[250px] rounded-full border-4 border-blue-600 mt-24"
-          src={manoj2}
+          src="/assets/manoj2.jpg"
           alt="Manoj"
         />
       </div>
@@ -56,6 +53,6 @@ const Home = () => {
       </Link>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;
