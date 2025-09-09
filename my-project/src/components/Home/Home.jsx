@@ -9,7 +9,7 @@ const Home = () => {
       <div className="photo">
         <img
           className="w-[250px] h-[250px] rounded-full border-4 border-blue-600 mt-24"
-          src="/assets/manoj2.jpg"
+          src="/assets/pp.jpg"
           alt="Manoj"
         />
       </div>
