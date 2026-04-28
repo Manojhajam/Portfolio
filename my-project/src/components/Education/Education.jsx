@@ -25,7 +25,7 @@ const Education = () => {
       company: "Clove IT, Biratnagar",
       duration: "2025",
       description:
-        "Completed a 3-month certification program in full-stack development, focusing on React for frontend, NodeJS for backend, and MmogoDB for database management. Gained hands-on experience in building CRUD operations, API fetching, and creating responsive designs.",
+        "Completed a 3-month certification program in full-stack development, focusing on React for frontend, NodeJS for backend, and MongoDB for database management. Gained hands-on experience in building CRUD operations, API fetching, and creating responsive designs.",
     },
   ];
 
@@ -34,8 +34,8 @@ const Education = () => {
       position: "Intern",
       company: "Not yet",
       duration: "-",
-      description:
-        "Worked on both frontend and backend development of web applications and mobile apps. Built responsive UIs and integrated APIs, contributing to end-to-end feature implementation.",
+      description: ""
+        // "Worked on both frontend and backend development of web applications and mobile apps. Built responsive UIs and integrated APIs, contributing to end-to-end feature implementation.",
     },
   ];
 

@@ -1,11 +1,13 @@
 import React from "react";
-import LMS from "../../assets/LMS.png";
+// import LMS from "../../assets/LMS.png";
+import bookshare from "../../assets/bookshare.jpeg";
+import dinetime from "../../assets/dinetime.jpeg";
 import { Github, Layers } from "lucide-react";
 import { FolderOpen } from "lucide-react";
 
 const Work = () => {
   return (
-    <div className="container px-16 max-sm:px-5 mx-auto bg-slate-50">
+    <div className="container px-16 max-sm:px-5 mx-auto bg-slate-50 mb-4">
       <div className="min-h-screen">
         <h1 className="text-4xl font-bold pt-10 mb-4 text-center">
           My Recent Works
@@ -102,11 +104,11 @@ const Work = () => {
             <div className="relative overflow-hidden h-56">
               <img
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                src="/assets/LMS.png"
+                src={dinetime}
                 alt=""
               />
               <a
-                href="https://github.com/Manojhajam/Library-management-System"
+                href="https://github.com/Manojhajam/dine-time"
                 target="_blank"
                 className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
               >
@@ -121,18 +123,55 @@ const Work = () => {
                   className="lucide lucide-layers h-4 w-4 text-primary"
                 />
                 <h2 className="text-xs text-gray-500 font-medium">
-                  Full Stack Development
+                  App Development
                 </h2>
               </div>
               <h1 className="text-xl font-semibold mb-2">
-                Library management System
+                Dine Time App
               </h1>
               <p className="text-muted-foreground">
-                A Library Management System web application that allows users to
-                manage books, members and transactions.
+                A dine time app that allows users to book tables at restaurants.
               </p>
             </div>
           </div>
+
+           <div className="group bg-card rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 border border-border/50">
+            <div className="relative overflow-hidden h-56">
+              <img
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                src={bookshare}
+                // src="/assets/bookshare.jpeg"
+                alt=""
+              />
+              <a
+                href="https://github.com/Manojhajam/book-share-app"
+                target="_blank"
+                className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              >
+                <Github className="h-8 w-8 text-white hover:scale-110 transition-transform" />
+              </a>
+            </div>
+
+            <div className="p-6">
+              <div className="flex items-center gap-2 mb-2">
+                <Layers
+                  color="blue"
+                  className="lucide lucide-layers h-4 w-4 text-primary"
+                />
+                <h2 className="text-xs text-gray-500 font-medium">
+                  App Development
+                </h2>
+              </div>
+              <h1 className="text-xl font-semibold mb-2">
+                Book Share App
+              </h1>
+              <p className="text-muted-foreground">
+                A Book Sharing App web application that allows users to
+                share and discover new books.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>

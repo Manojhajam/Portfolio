@@ -37,7 +37,7 @@ const AboutUs = () => {
 
         <div className="flex gap-6 max-md:flex-col">
 
-          <div className="text-lg text-gray-700 flex flex-col gap-6 max-w-xl mx-auto">
+          <div className="text-lg flex flex-col gap-6 max-w-xl mx-auto">
             <p>
               Hi, I’m Manoj, a passionate Web Developer with a keen eye for
               detail and a drive to build impactful digital experiences. I enjoy
