@@ -19,7 +19,7 @@ const Home = () => {
           <span className="text-blue-500 sm:items-center">Manoj Hajam</span>
         </h1>
         <h2 className="text-2xl md:text-3xl text-muted-foreground text-center">
-          Software Developer
+          Web Developer
         </h2>
         <p className="text-xl text-center">
           {" "}
