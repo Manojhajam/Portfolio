@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 const Home = () => {
   return (
     <div className="min-h-screen flex flex-col justify-center items-center text-4xl gap-5">
-      <div className="w-[250px] h-[250px] rounded-full border-4 border-blue-600 overflow-hidden">
+      <div className="w-[250px] h-[250px] rounded-full border-4 border-blue-600 overflow-hidden max-sm:mt-20" >
         <img
           className="w-full h-full object-cover"
           src="/assets/pp.jpg"
