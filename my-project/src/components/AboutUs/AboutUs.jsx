@@ -31,7 +31,7 @@ const codeData = [
 const AboutUs = () => {
   return (
     <div className="">
-      <div className="w-[80%] mx-auto min-h-screen">
+      <div className="w-full max-w-6xl mx-auto px-6 min-h-screen">
         <h1 className="text-4xl font-bold mb-4 pt-12 text-center">About Me</h1>
         <div className="w-16 h-1 bg-blue-600 mx-auto mb-10 rounded-full"></div>
 

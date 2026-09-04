@@ -38,7 +38,7 @@ const Navbar = () => {
           : "bg-gray-600/40"
       } ${animate ? "animate-navbar-slide" : ""}`}
     >
-      <div className="w-[90%] m-auto flex justify-between items-center">
+      <div className="w-full max-w-6xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="logo text-xl font-bold">Portfolio</div>
 

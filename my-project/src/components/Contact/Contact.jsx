@@ -24,6 +24,7 @@ const Contact = () => {
 
   return (
     <div className="bg-slate-100 min-h-screen p-5">
+      <div className="w-full max-w-6xl mx-auto">
       <div className="flex flex-col items-center">
         <h1 className="text-4xl font-bold mt-10">Get In Touch</h1>
         <div className="w-16 h-1 bg-blue-600 mx-auto mb-5 mt-2 rounded-full"></div>
@@ -122,6 +123,7 @@ const Contact = () => {
             Send
           </button>
         </form>
+      </div>
       </div>
     </div>
   );
