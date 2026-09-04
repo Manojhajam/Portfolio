@@ -2,14 +2,17 @@ import React from "react";
 import { motion } from "motion/react";
 
 const skillsData = [
-  { name: "JavaScript", level: "Advanced", percentage: 90 },
+  { name: "JavaScript", level: "Advanced", percentage: 85 },
   { name: "React", level: "Advanced", percentage: 90 },
-  { name: "Node.js", level: "Intermediate", percentage: 70 },
+  { name: "Node.js", level: "Intermediate", percentage: 80 },
+  { name: "Nest.js", level: "Intermediate", percentage: 85 },
+  { name: "TypeScript", level: "Intermediate", percentage: 80 },
+  { name: "Express.js", level: "Intermediate", percentage: 80 },
+  { name: "MongoDB", level: "Intermediate", percentage: 80 },
+  { name: "MySQL", level: "Intermediate", percentage: 80 },
   { name: "HTML & CSS", level: "Advanced", percentage: 90 },
-  { name: "Tailwind CSS", level: "Intermediate", percentage: 70 },
-  { name: "C/C++", level: "Intermediate", percentage: 70 },
-  { name: "Git & GitHub", level: "Intermediate", percentage: 70 },
-  { name: "Figma", level: "Beginner", percentage: 50 },
+  { name: "Tailwind CSS", level: "Intermediate", percentage: 85 },
+  { name: "Git & GitHub", level: "Intermediate", percentage: 90 },
 ];
 
 const Skills = () => {
