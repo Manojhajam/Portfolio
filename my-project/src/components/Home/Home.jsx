@@ -135,7 +135,7 @@ const Home = () => {
             alt="Manoj"
           />
         </Motion.div> */}
-        <div className="flex-1 flex justify-center items-center">
+        <div className="flex-1 flex justify-center items-center max-md:mt-20 max-sm:mt-32">
           <Motion.div
             className="relative w-[280px] h-[280px] shrink-0"
             initial={{ opacity: 0, scale: 0.7, rotate: -10 }}

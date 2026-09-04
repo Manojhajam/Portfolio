@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-scroll";
 import { Menu, X } from "lucide-react"; // for hamburger/close icons
 
@@ -6,6 +6,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [animate, setAnimate] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const navbarRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,6 +22,30 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrolled]);
 
+  useEffect(() => {
+    if (!menuOpen) return;
+
+    const handleClickOutside = (e) => {
+      if (navbarRef.current && !navbarRef.current.contains(e.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") setMenuOpen(false);
+    };
+
+    document.body.style.overflow = "hidden";
+    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("keydown", handleKeyDown);
+
+    return () => {
+      document.body.style.overflow = "";
+      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, [menuOpen]);
+
   const NavItems = [
     { name: "Home", path: "home" },
     { name: "About", path: "about" },
@@ -32,13 +57,14 @@ const Navbar = () => {
 
   return (
     <div
+      ref={navbarRef}
       className={`fixed w-full z-50 p-5 transition-all duration-300 ${
         scrolled
           ? "bg-gray-400/70 shadow-lg backdrop-blur-md"
           : "bg-gray-600/40"
       } ${animate ? "animate-navbar-slide" : ""}`}
     >
-      <div className="w-full max-w-6xl mx-auto flex justify-between items-center">
+      <div className="w-full max-w-6xl mx-auto flex justify-between items-center relative z-10">
         {/* Logo */}
         <div className="logo text-xl font-bold">Portfolio</div>
 
@@ -70,15 +96,21 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Backdrop */}
       {menuOpen && (
         <div
-          className={`sm:hidden absolute top-[68px] right-0 w-full bg-white/95 backdrop-blur-md shadow-md flex flex-col items-center gap-4 py-6 transition-all duration-300 ease-out ${
-            menuOpen
-              ? "translate-y-0 opacity-100"
-              : "-translate-y-full opacity-0"
-          }`}
-        >
+          className="sm:hidden fixed inset-0 bg-black/40 backdrop-blur-sm"
+          onClick={() => setMenuOpen(false)}
+        />
+      )}
+
+      {/* Mobile Menu */}
+      <div
+        className={`sm:hidden absolute left-0 right-0 top-full bg-white/95 backdrop-blur-md shadow-md overflow-hidden ${
+          menuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="flex flex-col items-center gap-4 py-6">
           {NavItems.map((link) => (
             <Link
               key={link.name}
@@ -95,7 +127,7 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
-      )}
+      </div>
     </div>
   );
 };
