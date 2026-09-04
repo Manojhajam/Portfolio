@@ -5,11 +5,7 @@ import { Link } from "react-scroll";
 
 const fullName = "Manoj Hajam";
 
-const roles = [
-  "Full Stack Developer",
-  "Web Developer",
-  "Software Developer",
-];
+const roles = ["Full Stack Developer", "Web Developer", "Software Developer"];
 
 const Home = () => {
   const [roleIndex, setRoleIndex] = useState(0);
@@ -28,7 +24,7 @@ const Home = () => {
     } else {
       timeout = setTimeout(
         () => setCharCount((c) => c + (deleting ? -1 : 1)),
-        deleting ? 40 : 90
+        deleting ? 40 : 90,
       );
     }
 
@@ -39,8 +35,8 @@ const Home = () => {
     <div className="min-h-screen flex flex-col justify-center items-center gap-5 px-6">
       <div className="flex flex-col-reverse md:flex-row justify-center items-center gap-10 w-full max-w-5xl">
         <div className="flex-1 flex flex-col justify-center items-center md:items-start gap-4 text-center md:text-left">
-          <h1 className="text-5xl font-bold">
-            Hi, I'm{" "}
+          <h1 className="text-6xl font-bold">
+            Hi, I'm <br />
             <span className="text-blue-500">
               {fullName.split("").map((char, i) => (
                 <Motion.span
@@ -73,8 +69,8 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.25, duration: 0.5 }}
           >
-            I create stunning web app and mobile app experiences with clean
-            code and modern design. Let's build something amazing together.
+            I create stunning web app and mobile app experiences with clean code
+            and modern design. Let's build something amazing together.
           </Motion.p>
           <Motion.div
             className="flex gap-4"
