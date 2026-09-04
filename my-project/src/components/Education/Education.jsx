@@ -31,11 +31,11 @@ const Education = () => {
 
   const experienceData = [
     {
-      position: "Intern",
-      company: "Not yet",
-      duration: "-",
-      description: ""
-        // "Worked on both frontend and backend development of web applications and mobile apps. Built responsive UIs and integrated APIs, contributing to end-to-end feature implementation.",
+      position: "Full Stack Developer",
+      company: "Yukta Applications",
+      duration: "Jun 2026 - Aug 2026",
+      description:
+        "Worked as a full stack developer, building web applications using NestJS for the backend, Next.js for the frontend, and PostgreSQL for the database.",
     },
   ];
 
