@@ -1,14 +1,15 @@
 import React from "react";
+import { motion } from "motion/react";
 
 const skillsData = [
-  { name: "JavaScript", level: "Advanced" },
-  { name: "React", level: "Advanced" },
-  { name: "Node.js", level: "Intermediate" },
-  { name: "HTML & CSS", level: "Advanced" },
-  { name: "Tailwind CSS", level: "Intermediate" },
-  { name: "C/C++", level: "Intermediate" },
-  { name: "Git & GitHub", level: "Intermediate" },
-  { name: "Figma", level: "Beginner" },
+  { name: "JavaScript", level: "Advanced", percentage: 90 },
+  { name: "React", level: "Advanced", percentage: 90 },
+  { name: "Node.js", level: "Intermediate", percentage: 70 },
+  { name: "HTML & CSS", level: "Advanced", percentage: 90 },
+  { name: "Tailwind CSS", level: "Intermediate", percentage: 70 },
+  { name: "C/C++", level: "Intermediate", percentage: 70 },
+  { name: "Git & GitHub", level: "Intermediate", percentage: 70 },
+  { name: "Figma", level: "Beginner", percentage: 50 },
 ];
 
 const Skills = () => {
@@ -20,10 +21,21 @@ const Skills = () => {
         {skillsData.map((skill, idx) => (
           <div
             key={idx}
-            className="bg-white shadow rounded-lg p-6 flex flex-col items-center"
+            className="bg-white shadow rounded-lg p-6 flex flex-col"
           >
-            <span className="text-xl font-semibold mb-2">{skill.name}</span>
-            <span className="text-sm text-gray-500">{skill.level}</span>
+            <div className="flex items-center justify-between mb-3">
+              <span className="text-xl font-semibold">{skill.name}</span>
+              <span className="text-sm text-gray-500">{skill.percentage}%</span>
+            </div>
+            <div className="w-full h-2 rounded-full bg-gray-200 overflow-hidden">
+              <motion.div
+                className="h-full rounded-full bg-blue-600"
+                initial={{ width: 0 }}
+                whileInView={{ width: `${skill.percentage}%` }}
+                viewport={{ once: true }}
+                transition={{ duration: 1.2, ease: "easeOut" }}
+              />
+            </div>
           </div>
         ))}
       </div>
